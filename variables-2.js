@@ -8,13 +8,13 @@ console.log('this is the value assined to variable x =',x);
 
 // Var
 
-var y = 222;
+var y = "Shivalal";
 
 console.log('this is the value assined to variable y =',y);
 
 
 // Const
 
-const z = 333;
+const z = {firstName:"Shivalal", lastName:"Prasad"};
 
 console.log('this is the value assined to variable z =',z);

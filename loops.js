@@ -1,7 +1,7 @@
 // while loop starts here
 
 let a=0;
-console.log("while loop statrts here");
+console.log("while loop starts here");
 while (a<14) {
     console.log(a);
     a++;
@@ -11,22 +11,24 @@ console.log("while loop ends here");
 //while with break
 
 let b=0;
-console.log("while loop with break at 5 statrts here");
+console.log("while loop with break at 5 starts here");
 while (b<14) {
-    if(b==5)break;
     console.log(b);
     b++;
+    if (b==5) {
+        break;
+    };
 }
 console.log("while loop with break at 5 ends here");
 
 //while with continue
 
 let c=0;
-console.log("while loop with continue at 5 statrts here");
-while (c<=14) {
-    if(c==5)continue;
+console.log("while loop with continue at 5 starts here");
+while (c<=154) {
+    c++;
     console.log(c);
-     c++;
+    if(c==5) continue;
 }
 console.log("while loop with continue at 5 ends here");
 
@@ -45,8 +47,8 @@ console.log("for loop ends here");
 console.log("for loop with break srarts here");
 
 for (let d=10; d>-5; d--){
-    if(d==3)break;
     console.log(d);
+    if(d==3)break;
 }
 
 console.log("for loop with break ends here");
@@ -56,8 +58,8 @@ console.log("for loop with break ends here");
 console.log("for loop with continue srarts here");
 
 for (let e=10; e>-5; e--){
-    if(e==3)continue;
     console.log(e);
+    if(e==3)continue;
 }
 
 console.log("for loop with continue ends here");
@@ -96,8 +98,8 @@ console.log("do while loop with continue starts here");
 
 let h=-1;
 do{
-    if(h==3)continue;
     console.log(h++)
+    if(h==3)continue;
 }
 while(h<5);
 

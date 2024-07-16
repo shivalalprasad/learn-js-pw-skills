@@ -33,6 +33,7 @@ console.log(true||false)
 console.log(true||"false")
 console.log("true"||false)
 
-console.log("|| end")
+console.log( "" || "end")
+console.log( "end" || "")
 
 

@@ -62,4 +62,86 @@ function r(x,y,z=1) {
 r(10,5)
 r(10,8,6)}
 
+//// multiple parameters and return
 
+function multiMin(...values){
+    console.log(Math.min(values[0],values[1],values[2],values[3],values[4],values[5],values[6],values[7],values[8],values[9])) 
+}
+multiMin(1,2,3,4,5,6,7,8,9,10)
+
+
+/// math functions in JS
+
+//    Math.abs(x) returns the absolute value of x
+console.log("Math.abs(-4.7) = " + Math.abs(-4.7));
+
+//    Math.ceil(x) returns the value of x rounded up to its nearest integer
+console.log("Math.ceil(4.4) = " + Math.ceil(4.4));
+
+//    Math.floor(x) returns the value of x rounded down to its nearest integer
+console.log("Math.floor(4.7) = " + Math.floor(4.7));
+
+//    Math.max(x, y, z, ..., n) returns the number with the highest value
+console.log("Math.max(0, 150, 30, 20, -8, -200) = " + Math.max(0, 150, 30, 20, -8, -200));
+
+//    Math.min(x, y, z, ..., n) returns the number with the lowest value
+console.log("Math.min(0, 150, 30, 20, -8, -200) = " + Math.min(0, 150, 30, 20, -8, -200));
+
+//    Math.pow(x, y) returns the value of x to the power of y
+console.log("Math.pow(8, 2) = " + Math.pow(8, 2));
+
+//    Math.random() returns a random number between 0 (inclusive), and 1 (exclusive)
+console.log("Math.random() = " + Math.random());
+
+//    Math.round(x) returns the value of x rounded to its nearest integer
+console.log("Math.round(4.6) = " + Math.round(4.6));
+console.log("Math.round(4.4) = " + Math.round(4.4));
+console.log("Math.round(4.5) = " + Math.round(4.5));
+
+//    Math.sqrt(x) returns the square root of x
+console.log("Math.sqrt(64) = " + Math.sqrt(64));
+
+// Date object/Function
+
+// Get current date and time
+
+const now = new Date();
+console.log("Current date and time:", now);
+
+// Create a date object for a specific date
+const christmas2023 = new Date(2023, 11, 25); // Month is 0-indexed (0 = January, 11 = December)
+console.log("Christmas 2023:", christmas2023);
+
+// Get components of a date
+console.log("Year:", now.getFullYear());
+console.log("Month:", now.getMonth() + 1); // Add 1 because months are 0-indexed
+console.log("Day of the month:", now.getDate());
+console.log("Day of the week:", now.getDay()); // 0 = Sunday, 1 = Monday, etc.
+console.log("Hours:", now.getHours());
+console.log("Minutes:", now.getMinutes());
+console.log("Seconds:", now.getSeconds());
+console.log("Milliseconds:", now.getMilliseconds());
+console.log("Time in milliseconds since January 1, 1970:", now.getTime());
+
+// Set components of a date
+christmas2023.setFullYear(2024);
+christmas2023.setMonth(0); // January
+christmas2023.setDate(1);
+console.log("Modified Christmas date:", christmas2023);
+
+// Date formatting
+console.log("Date string:", now.toDateString());
+console.log("Time string:", now.toTimeString());
+console.log("ISO string:", now.toISOString());
+console.log("Locale string:", now.toLocaleString());
+console.log("Locale date string:", now.toLocaleDateString());
+console.log("Locale time string:", now.toLocaleTimeString());
+
+// Date calculations
+const oneDayInMilliseconds = 24 * 60 * 60 * 1000;
+const tomorrow = new Date(now.getTime() + oneDayInMilliseconds);
+console.log("Tomorrow:", tomorrow);
+
+// Parsing dates from strings
+const dateFromString = new Date("2023-12-25T12:00:00Z");
+console.log("Date from string:", dateFromString);

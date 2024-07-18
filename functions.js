@@ -145,3 +145,22 @@ console.log("Tomorrow:", tomorrow);
 // Parsing dates from strings
 const dateFromString = new Date("2023-12-25T12:00:00Z");
 console.log("Date from string:", dateFromString);
+
+
+
+//passsing functions as a parameter
+
+function helllo() {
+    console.log("Hello");
+}
+
+function bye() {
+    console.log("Bye");
+}
+
+function greet(func) {
+    func();
+}
+
+greet(helllo);
+greet(bye);

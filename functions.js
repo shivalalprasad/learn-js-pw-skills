@@ -1,4 +1,5 @@
 // Basic function
+// Function without parameters
 function compliments() {
     console.log(`Hey Shivalal you are so nice`);
     console.log(`Hey Shivalal you have good comunivation skills`);
@@ -71,7 +72,7 @@ multiMin(1,2,3,4,5,6,7,8,9,10)
 
 
 /// math functions in JS
-
+// Math object/Function
 //    Math.abs(x) returns the absolute value of x
 console.log("Math.abs(-4.7) = " + Math.abs(-4.7));
 
@@ -149,7 +150,7 @@ console.log("Date from string:", dateFromString);
 
 
 //passsing functions as a parameter
-
+// Function with parameters
 function helllo() {
     console.log("Hello");
 }
@@ -164,3 +165,42 @@ function greet(func) {
 
 greet(helllo);
 greet(bye);
+
+ // Anonymous Function
+ // the function is defined without a name but in a variable form
+ // An anonymous function is a function that is not assigned to a variable.
+ 
+ const myFunction = function() {
+    console.log("This is an anonymous function");
+  };
+  myFunction(); 
+
+//immediate invoke function  
+
+  // Higher Order Functions (Functions that take functions as parameters or return functions)
+  // A function that takes another function as a parameter or returns a function is called a higher-order function. HOF
+  // A function that returns another function is called a higher-order function.
+  // A function that takes another function as a return value is called a higher-order function.
+  // A function that is returned by another function is called a higher-order function.
+
+function fofx(r,t){
+    console.log(r+r);
+   t(r+r+r+r)
+}
+fofx(2,msp)
+ function msp(t){
+    console.log("hi");
+    console.log(t);
+ }
+
+
+ //set time out
+ console.log("Before time out");
+ setTimeout(
+    function stt() {
+        console.log(9999)
+    },5000
+
+ )
+
+ console.log("After time out");

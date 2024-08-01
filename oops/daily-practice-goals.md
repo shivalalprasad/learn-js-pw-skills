@@ -12,7 +12,7 @@ date: `01`| `08`|`2024`
 3. creating class like objects using normal functions without using `class` keyword 👍
 
 4. `static` variable in `class` 👍
-5. create validation before creating the `object` of the `class` by using `static` keyword 🚫
+5. create validation before creating the `object` of the `class` by using `static` keyword 
 
 6.👉[_`gith hub repo link of sanketh singh OOPs is`_][def]
 

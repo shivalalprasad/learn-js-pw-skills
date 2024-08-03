@@ -14,37 +14,37 @@ class product{
         if(typeof builder.productName == "string" && builder.productName.length > 0){
             this.#productName = builder.productName;
         }else{
-            console.log(`Product ${builder.varname} Name is invalid`);
+            console.log(`Product "${builder.varname}" Name is invalid`);
         };
         if (builder.productPrice > 0) {
             this.#productPrice = builder.productPrice;
         } else {
-            console.log(`Product ${builder.varname} Price is invalid`);
+            console.log(`Product "${builder.varname}" Price is invalid`);
         }
         if(typeof builder.productDescription == "string" && builder.productDescription.length > 0){
             this.#productDescription = builder.productDescription;
         }else{
-            console.log(`Product ${builder.varname} Description is invalid`);
+            console.log(`Product "${builder.varname}" Description is invalid`);
         };
         if(typeof builder.productImage == "string" && builder.productImage.length > 0){
             this.#productImage = builder.productImage;
         }else{
-            console.log(`Product ${builder.varname} Image is invalid`);
+            console.log(`Product "${builder.varname}" Image is invalid`);
         };
         if(typeof builder.productCategory == "string" && builder.productCategory.length > 0){
             this.#productCategory = builder.productCategory;
         }else{
-            console.log(`Product ${builder.varname} Category is invalid`);
+            console.log(`Product "${builder.varname}" Category is invalid`);
         };
         if(typeof builder.productReviews == "string" && builder.productReviews.length > 0){
             this.#productReviews = builder.productReviews;
         }else{
-            console.log(`Product ${builder.varname} Reviews sre invalid`);
+            console.log(`Product "${builder.varname}" Reviews sre invalid`);
         };
         if(typeof builder.productRating == "number" && builder.productRating > 0){
             this.#productRating = builder.productRating;
         }else{
-            console.log(`Product ${builder.varname} Rating is invalid`);
+            console.log(`Product "${builder.varname}" Rating is invalid`);
         };
     }
 

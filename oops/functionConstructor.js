@@ -49,7 +49,7 @@ function  product(productName, productPrice,productDescription,productImage,prod
 
 let iqoo_neo_6 = new product("iqoo neo 6",29999,"midrange flagship","./images/iqoo_neo_6.jpg","mobile","awesome phone, good camera, good battery, good sound,imensive performance",4.9)
 
-console.log(iqoo_neo_6.displayProduct());
+iqoo_neo_6.displayProduct();
 iqoo_neo_6.wishlist();
 iqoo_neo_6.addToCart();
 iqoo_neo_6.buyNow();

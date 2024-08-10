@@ -1,6 +1,6 @@
-// how to assin varibles and their values   
+// how to assin varibles and their values
 
-// Let 
+// Let
 
 let x = 111;
 
@@ -18,3 +18,8 @@ console.log('this is the value assined to variable y =',y);
 const z = {firstName:"Shivalal", lastName:"Prasad"};
 
 console.log('this is the value assined to variable z =',z);
+
+var  shivaji;
+
+console.log(shivaji);
+

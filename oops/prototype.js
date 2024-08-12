@@ -82,7 +82,7 @@ LENSKARTBLU.buyNow();
 
 
 class watch {
-    constructor(name, price, description, image, reviews, rating, dimension, weight, color, diameter, material) {
+    constructor(name, price, image, reviews, rating, dimension, weight, color, diameter, material) {
         this.name = name;
         this.price = price;
         this.image = image;

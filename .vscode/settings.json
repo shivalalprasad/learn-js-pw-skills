@@ -3,7 +3,7 @@
     "IDX.aI.enableCodebaseIndexing": true,
     "code-runner.runInTerminal": true,
     "code-runner.customCommand": "MSP-Code",
-    "code-runner.temporaryFileName": "",
+    "code-runner.temporaryFileName": "tempCodeRunnerFile",
     "code-runner.saveFileBeforeRun": true,
     "code-runner.clearPreviousOutput": true
 }
